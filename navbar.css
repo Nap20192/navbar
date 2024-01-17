@@ -11,7 +11,22 @@ header{
     justify-content: space-between;
     align-items: center;
     font-weight: 400 ;
-    padding:14px 30px;
+    padding:14px 200px;
+}
+@media (max-width:1580px) {
+ header{
+  padding: 14px 30px;
+ } 
+ .d1{
+  width:290px;
+ }
+ .d1 input{
+  width:238px;
+ }
+ .header_logo{
+  width: 120px;
+  height:43.4px;
+ }
 }
 .header_logo{
     display: block;
