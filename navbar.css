@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+button{
+    border: none;
+    background: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400 ;
+    padding:14px 30px;
+}
+.header_logo{
+    display: block;
+    background-image: url(/LOGO.svg);
+    background-repeat: no-repeat;
+    width: 166px;
+    height: 60px;
+}
+.header_list{
+    display: flex;
+    list-style-type: none;
+    gap: 41px;
+}
+.header_link{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.header_list :hover{
+color: var(--night, #246895);
+}
+
+.d1 {
+    position: relative;
+    width: 355px;
+    height: 44px;    
+    border-radius: 8px;
+    border: 1px solid #E5E0EB;
+  }
+  .d1 input {
+    width: 300px;
+    height: 20px;    
+    border: none;
+    margin: 12px;
+
+  }
+  .d1 input:focus{
+    outline: none;
+  }
+  .d1 button {
+    position: absolute; 
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background: url(/search.svg);
+    background-repeat: no-repeat;
+  }
+
+  input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .dropdown_menu{
+    background-color: #F3F3F3;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    padding: 10px;
+    position: absolute;
+    width:110%;
+    top: 100%;
+    left: 10%;
+    transition: all .09s ease-out;
+
+  }
+  .dropdown .show{
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+  }
+  .dropdown_link{
+    display: block;
+    padding: 10px 0px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 0.5px solid #E4E4E4;
+    box-sizing: content-box; 
+  }
+  .dropdown_link:hover{
+  color: var(--night, #246895);
+  }
+
+  .dropdown_menu .dropdown_link:last-child {
+    border-bottom: none; 
+  }
